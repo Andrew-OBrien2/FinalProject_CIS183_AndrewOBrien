@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CACACA"
+    tools:context=".HomePage">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_v_home_budget"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/moneystockpic"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="2"
+        android:text="BUDGET"
+        android:textColor="@color/text_shadow_white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_v_home_addFood"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/plussignstockpic"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="2"
+        android:text="ADD FOOD"
+        android:textColor="@color/light_font"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_v_home_meals"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_v_home_search"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/searchstockpic"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="2"
+        android:text="SEARCH"
+        android:textColor="@color/light_font"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_v_home_budget"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="99dp"
+        android:fontFamily="serif-monospace"
+        android:text="HOME"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_v_home_budget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_v_home_meals"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/mealstockpic"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="2"
+        android:text="MEALS"
+        android:textColor="@color/light_font"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_v_home_logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="LOG OUT"
+        android:textColor="#287ADC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_v_home_search" />
+</androidx.constraintlayout.widget.ConstraintLayout>
